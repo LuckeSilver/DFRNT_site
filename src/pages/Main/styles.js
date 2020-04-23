@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import bg from '../../assets/bg.png';
+import styled from "styled-components";
+import bg from "../../assets/bg.png";
 
 export const Container = styled.div`
   display: flex;
@@ -17,10 +17,13 @@ export const Container = styled.div`
 `;
 
 export const TextDiv = styled.div`
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.5);
   margin-left: 3%;
-  margin-top: 30vh;
+  margin-top: 15vh;
   @media (max-width: 550px) {
-    margin-top: 40vh;
+    width: 280px;
+    margin-top: 30vh;
   }
 `;
 
