@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
@@ -34,7 +34,7 @@ export const MenuButton = styled.button`
   span {
     display: inline-block;
     position: relative;
-    height: ${props => (props.active ? '0px' : '4px')};
+    height: ${(props) => (props.active ? "0px" : "4px")};
     width: 34px;
     background: #000;
     vertical-align: middle;
@@ -43,22 +43,22 @@ export const MenuButton = styled.button`
     &:after {
       display: inline-block;
       position: absolute;
-      content: '';
+      content: "";
       height: 4px;
       background: #000;
       transition: all 200ms;
     }
     &:before {
-      top: ${props => (props.active ? '0px' : '-13px')};
-      left: ${props => (props.active ? '0px' : '5px')};
-      width: ${props => (props.active ? '34px' : '24px')};
-      transform: ${props => (props.active ? 'rotate(45deg)' : '')};
+      top: ${(props) => (props.active ? "0px" : "-13px")};
+      left: ${(props) => (props.active ? "0px" : "5px")};
+      width: ${(props) => (props.active ? "34px" : "24px")};
+      transform: ${(props) => (props.active ? "rotate(45deg)" : "")};
     }
     &:after {
-      top: ${props => (props.active ? '0px' : '13px')};
-      left: ${props => (props.active ? '0px' : '5px')};
-      width: ${props => (props.active ? '34px' : '23px')};
-      transform: ${props => (props.active ? 'rotate(-45deg)' : '')};
+      top: ${(props) => (props.active ? "0px" : "13px")};
+      left: ${(props) => (props.active ? "0px" : "5px")};
+      width: ${(props) => (props.active ? "34px" : "23px")};
+      transform: ${(props) => (props.active ? "rotate(-45deg)" : "")};
     }
   }
 
@@ -74,16 +74,18 @@ export const MenuButton = styled.button`
 `;
 
 export const OrderButton = styled.button`
-  background: red;
+  background: #000;
   color: #f7f7f7;
+  border-radius: 10px;
   padding: 10px;
   font-size: 24px;
   font-weight: bold;
-  transition: all 200ms;
+  transition: 0.5s;
   z-index: 100;
   white-space: nowrap;
 
   &:hover {
+    border: 2px solid #000;
     background: transparent;
     color: #000;
   }
@@ -110,24 +112,24 @@ export const LogoButton = styled.button`
 
 export const HiddenMenu = styled.div`
   display: flex;
-  width: ${props => (props.active ? '20vw' : '0px')};
+  width: ${(props) => (props.active ? "20vw" : "0px")};
   transition: all 800ms;
   z-index: 1;
 
   @media (max-width: 550px) {
     font-size: 3vw;
-    width: ${props => (props.active ? '40vw' : '0px')};
+    width: ${(props) => (props.active ? "40vw" : "0px")};
   }
 
   button {
-    opacity: ${props => (props.active ? 1 : 0)};
-    width: ${props => (props.active ? '100%' : '0px')};
-    transition: ${props => (props.active ? 'all 500ms' : 'all 100ms')};
-    transition-delay: ${props => (props.active ? '400ms' : '100ms')};
+    opacity: ${(props) => (props.active ? 1 : 0)};
+    width: ${(props) => (props.active ? "100%" : "0px")};
+    transition: ${(props) => (props.active ? "all 500ms" : "all 100ms")};
+    transition-delay: ${(props) => (props.active ? "400ms" : "100ms")};
     font-size: 24px;
     color: #000;
     font-weight: bold;
-    margin: ${props => (props.active ? '0' : '0 -10px')};
+    margin: ${(props) => (props.active ? "0" : "0 -10px")};
 
     a {
       color: inherit;

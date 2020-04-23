@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { Element } from 'react-scroll';
+import styled from "styled-components";
+import { Element } from "react-scroll";
 
 export const Container = styled.div`
   display: flex;
@@ -40,10 +40,9 @@ export const HomeButton = styled.div`
 `;
 
 export const MenuTitle = styled.li`
-  border: 2px solid #000;
   padding: 5px 15px;
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 800;
   cursor: pointer;
 `;
 
@@ -55,19 +54,21 @@ export const MenuSubTitle = styled.li`
 
 export const MenuItem = styled.li`
   padding: 1px 15px;
-  font-size: 22px;
-  font-weight: bold;
+  font-size: 20px;
+  font-weight: 200;
   color: #999;
 `;
 
 export const GridPizzas = styled(Element)`
+  width: 100%;
   overflow: auto;
-  max-height: 88vh;
+  overflow-x: hidden;
+  max-height: 80vh;
   margin-left: 20px;
 
   /* width */
   &::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
   }
 
   /* Track */
@@ -104,38 +105,11 @@ export const GridPizzas = styled(Element)`
   }
 `;
 
-export const GridItem = styled.article`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 20px;
-  box-shadow: 5px 5px 10px #999;
-  width: 200px;
-
-  div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
-
-    span {
-      font-size: 20px;
-      font-weight: bold;
-      margin-left: 10px;
-    }
-  }
-
-  @media (max-width: 550px) {
-    margin: 0 30%;
-  }
-`;
-
 export const GridTitle = styled(Element)`
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 28px;
+  font-weight: 900;
   margin-top: 50px;
   margin-bottom: 20px;
-  margin-left: 20px;
   white-space: nowrap;
 
   @media (max-width: 550px) {
