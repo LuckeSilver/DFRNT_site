@@ -91,7 +91,8 @@ export const OrderButton = styled.button`
   }
 
   @media (max-width: 550px) {
-    font-size: 3vw;
+    font-size: 14px;
+    border-radius: 5px;
     padding: 1vw;
   }
 `;
@@ -137,7 +138,7 @@ export const HiddenMenu = styled.div`
     }
 
     @media (max-width: 550px) {
-      font-size: 3vw;
+      font-size: 4vw;
     }
   }
 `;
