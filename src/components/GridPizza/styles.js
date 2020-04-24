@@ -88,5 +88,6 @@ export const GridItem = styled.article`
 
   @media (max-width: 550px) {
     margin: 0 25%;
+    margin-top: 25px;
   }
 `;
