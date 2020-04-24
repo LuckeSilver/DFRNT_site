@@ -26,12 +26,34 @@ export const ZapContainer = styled.div`
   width: 200px;
   height: 50px;
   background-color: #4ced69;
+  z-index: 1;
 
   a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
     color: #f7f7f7;
     font-size: 20px;
     font-weight: 900;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+  }
+  a:hover {
+    border: 2px solid #000;
+    border-radius: 15px;
+    color: #000;
+  }
+
+  @media (max-width: 550px) {
+    width: 150px;
+    height: 40px;
+    margin-left: 5px;
+
+    a {
+      font-size: 16px;
+    }
   }
 `;
 

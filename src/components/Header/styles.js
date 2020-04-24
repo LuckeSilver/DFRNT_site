@@ -86,7 +86,7 @@ export const OrderButton = styled.button`
 
   &:hover {
     border: 2px solid #000;
-    background: transparent;
+    background: #f7f7f7;
     color: #000;
   }
 
